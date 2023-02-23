@@ -83,7 +83,7 @@ class LibreInventory(object):
         elif os in ['linux']:
             return 'linux', 'linux', 'linux'
         else:
-            print(f'{os} is not a supported os')
+            return (f'{os} is not a supported os')
 
     def load(self) -> Inventory:
         data = self.get_inventory_from_libre()
